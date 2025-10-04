@@ -1,7 +1,7 @@
 # Notes App (Practice Project)
 
 This is a simple Notes App built with **Node.js, Express, and EJS**.  
-It allows users to create, view, edit, and delete notes stored as text files.
+Instead of using a database, all notes are stored as plain text files inside a folder, using Node's built-in **fs module**.
 
 ## Features
 - Create a new note
@@ -15,10 +15,18 @@ It allows users to create, view, edit, and delete notes stored as text files.
 - Express.js
 - EJS (Embedded JavaScript Templates)
 - TailwindCSS (for styling)
+- **fs module** for file storage
+
+## How It Works
+- When you create a note, it is saved as a `.txt` file in the `/files` directory.
+- The home page lists all existing `.txt` files.
+- Clicking **Read More** shows the file contents.
+- You can rename or delete files directly from the UI.
+- No database is used — everything is handled through the file system.
 
 ## Purpose
-This project is **only for practice** and learning purposes:
-- Working with Express routing
-- Using EJS for dynamic rendering
-- Handling file system operations with Node’s `fs` module
-- Practicing CRUD basics
+This project is only for **practicing backend basics**:
+- Routing in Express
+- Working with EJS templates
+- File handling with the Node.js `fs` module
+- CRUD operations without a database
